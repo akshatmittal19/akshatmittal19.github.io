@@ -37,5 +37,3 @@
 .background-note{border-top:1px solid var(--line);padding-top:22px;margin-top:26px}.section-content .background-note p{font-size:13px;margin:0}
 .contact>p:not(.eyebrow){max-width:560px;color:var(--muted);font-size:16px;line-height:1.8;margin:0 0 25px}
 @media(max-width:650px){header{height:auto;min-height:100px;flex-wrap:wrap;gap:4px 20px;padding:20px 0}nav{flex-wrap:wrap;gap:22px}.section-aside{max-width:none}.thesis h3{font-size:34px}.hero-bottom{gap:16px;line-height:1.8}.hero-bottom>span{max-width:215px}.desktop-break{display:none}.project-footer{gap:14px;flex-wrap:wrap}.hero-context{font-size:15px}.contact h2{font-size:44px}}
-
-.section-content .modules-label{font-size:13px;color:var(--ink);margin:18px 0 9px}.modules{padding-left:18px;margin:0}.modules li{font-size:14px;line-height:1.7;margin:5px 0;color:var(--ink);padding-left:3px}.modules li span{color:var(--muted);font-size:13px}
