@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Akshat Mittal — MSc Machine Learning at UCL, Computer Science at BITS Pilani. Projects in machine learning and artificial intelligence.">
+  <meta name="description" content="Akshat Mittal explores open-ended learning, reinforcement learning, and robustness, drawing on five years of software engineering experience and a recently completed MSc thesis at UCL.">
   <meta name="theme-color" content="#f6f4ee">
-  <meta property="og:title" content="Akshat Mittal — Personal website">
-  <meta property="og:description" content="Machine learning, artificial intelligence, and projects by Akshat Mittal.">
+  <meta property="og:title" content="Akshat Mittal — Machine Learning &amp; Software Engineering">
+  <meta property="og:description" content="Open-ended learning, reinforcement learning, and robustness. Five years building software. Explore my UCL MSc thesis and research projects.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Akshat Mittal — Personal website">
-  <meta name="twitter:description" content="Machine learning, artificial intelligence, and projects by Akshat Mittal.">
+  <meta name="twitter:title" content="Akshat Mittal — Machine Learning &amp; Software Engineering">
+  <meta name="twitter:description" content="Open-ended learning, reinforcement learning, and robustness. Five years building software. Explore my UCL MSc thesis and research projects.">
   <meta property="og:url" content="https://akshatmittal19.github.io/">
   <link rel="canonical" href="https://akshatmittal19.github.io/">
-  <title>Akshat Mittal — Personal website</title>
+  <title>Akshat Mittal — Machine Learning &amp; Software Engineering</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -21,61 +21,135 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="page">
     <header>
-      <a class="wordmark" href="./" aria-label="Home">Akshat Mittal<span class="dot">.</span></a>
+      <a class="wordmark" href="./" aria-label="Akshat Mittal, home">Akshat Mittal<span class="dot">.</span></a>
       <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
     <main id="main">
       <section class="hero" aria-labelledby="intro-title">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> MACHINE LEARNING · LONDON, UK</p>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OPEN-ENDED LEARNING · REINFORCEMENT LEARNING · ROBUSTNESS</p>
         <h1 id="intro-title">Hello, I’m<br><span>Akshat.</span></h1>
-        <p class="intro">MSc Machine Learning at UCL.<br class="desktop-break"> Computer Science at BITS Pilani.</p>
-        <a class="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
-        <div class="hero-bottom"><span>LEARNING · BUILDING · EXPLORING</span><span>SCROLL TO EXPLORE ↓</span></div>
+        <p class="intro">I’m interested in how agents can keep learning<br class="desktop-break"> and remain robust as their world changes.</p>
+        <p class="hero-context">My research directions are open-ended learning, reinforcement learning, and robustness. I recently completed my MSc thesis at UCL, exploring these questions in language-model reasoning, after five years in software engineering.</p>
+        <div class="action-links">
+          <a class="button" href="#research">Explore my research <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="./assets/akshat-mittal-msc-thesis.pdf" type="application/pdf">Read my thesis <span class="file-label">PDF ↗</span></a>
+        </div>
+        <div class="hero-bottom"><span>FIVE YEARS IN ENGINEERING / MSc THESIS AT UCL</span><a href="https://www.linkedin.com/in/akshatmittal-ml/">LINKEDIN ↗</a></div>
       </section>
-      <section class="section about" id="about" aria-labelledby="about-title">
-        <div class="section-label"><span>01 / ABOUT</span><h2 id="about-title">A little about me.</h2></div>
+
+      <section class="section research" id="research" aria-labelledby="research-title">
+        <div class="section-label">
+          <span>01 / RESEARCH</span>
+          <h2 id="research-title">Learning beyond<br>a fixed curriculum.</h2>
+          <p class="section-aside">How can agents keep encountering useful new challenges without losing breadth or robustness? I explore this through adaptive curricula, environment generation, and reinforcement learning—from language-model reasoning to locomotion.</p>
+        </div>
         <div class="section-content">
-          <p class="large-copy">Exploring machine learning and artificial intelligence.</p>
-          <p class="draft">I’m Akshat Mittal, based in London. My academic background spans machine learning at UCL and computer science at BITS Pilani. Here you’ll find a selection of my projects and coursework.</p>
-          <span class="small-label">UCL / BITS PILANI</span>
+          <article class="thesis">
+            <p class="eyebrow">COMPLETED MSc THESIS · UCL · SEPTEMBER 2026</p>
+            <h3>Augment, Prioritise, Learn</h3>
+            <p class="thesis-subtitle">Data Augmentation and Curriculum Design for Robust Language-Model Reasoning</p>
+            <p>How can a curriculum keep finding useful challenges as a model improves—and does that learning transfer? My thesis connected ideas from open-ended learning with reinforcement-learning post-training, combining targeted data augmentation and adaptive task selection for mathematical reasoning and long-horizon terminal tasks. Supervised by Dr. Ilija Bogunovic.</p>
+            <ul class="findings">
+              <li><strong>Probe the failure modes.</strong> Adding an intermediate reasoning step was the most disruptive augmentation across 50 mathematical problems and four model–inference configurations.</li>
+              <li><strong>Train on targeted variation.</strong> In procedural arithmetic, subproblem augmentation improved mean held-out accuracy from 18.48% to 28.40% under prioritised level replay, across two seeds.</li>
+              <li><strong>Test what transfers.</strong> In terminal tasks, prioritised replay found more informative training groups but transferred less well than uniform sampling: 34.0% versus 42.5% completion on InterCode-Bash, in a single training seed.</li>
+            </ul>
+            <p class="research-takeaway">The central lesson: useful training signals and robust generalisation do not always go together.</p>
+            <div class="action-links">
+              <a class="button" href="./assets/akshat-mittal-msc-thesis.pdf" type="application/pdf">Read the thesis <span class="file-label">PDF ↗</span></a>
+              <a class="text-link" href="./assets/akshat-mittal-msc-thesis.pdf" download="Akshat-Mittal-MSc-Thesis.pdf">Download ↓</a>
+            </div>
+            <div class="research-code" aria-label="Thesis code">
+              <span class="small-label">RELATED CODE</span>
+              <a href="https://github.com/akshatmittal19/augmentation-reasoning">Reasoning augmentations ↗</a>
+              <a href="https://github.com/akshatmittal19/terminal-tasks-curriculum">Terminal-task curricula ↗</a>
+            </div>
+          </article>
+          <article class="project related-project">
+            <div class="project-heading"><span class="tag">OPEN-ENDED RL · JAN–APR 2026</span></div>
+            <h3>Open-ended quadrupedal locomotion</h3>
+            <p>Studied open-ended reinforcement learning through unsupervised environment design: generating and adapting environments to challenge an agent as it learns. Implemented ACCEL/PLR-style curricula in JAX and MuJoCo Playground, with procedural terrain generation, mutation, and replay.</p>
+            <p>Evaluated robustness under added payloads, actuator noise, and terrain perturbations, comparing against reward-shaped baselines.</p>
+            <div class="project-footer"><span>UCL RESEARCH PROJECT</span><a href="https://github.com/akshatmittal19/Open-endedness-and-General-Intelligence">View code ↗</a></div>
+          </article>
+          <p class="project-note"><a href="https://github.com/akshatmittal19?tab=repositories">More projects and coursework on GitHub ↗</a></p>
         </div>
       </section>
-      <section class="section projects" id="projects" aria-labelledby="projects-title">
-        <div class="section-label"><span>02 / PROJECTS</span><h2 id="projects-title">Things I’m making.</h2></div>
+
+      <section class="section experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-label"><span>02 / ENGINEERING EXPERIENCE</span><h2 id="experience-title">Five years<br>building software.</h2><p class="section-aside">From cloud infrastructure and geospatial systems to AI tools for understanding code. That engineering background informs how I approach research: build carefully, test assumptions, and understand the failures.</p></div>
         <div class="section-content">
-          <article class="project">
-            <div class="project-heading"><span class="project-number">001</span><span class="tag">REINFORCEMENT LEARNING</span></div>
-            <h3>Open-ended locomotion</h3>
-            <p>A project on open-ended quadrupedal locomotion using unsupervised environment design methods.</p>
-            <div class="project-footer"><span>CODE &amp; COURSEWORK</span><a href="https://github.com/akshatmittal19/Open-endedness-and-General-Intelligence" aria-label="View Open-ended locomotion on GitHub">View on GitHub <span aria-hidden="true">↗</span></a></div>
+          <article class="role">
+            <p class="role-date">JUN 2023 — SEP 2025</p>
+            <h3>CAST Software</h3>
+            <p class="role-title">Senior Software Engineer · Bangalore</p>
+            <ul>
+              <li>Built AI agents connecting an MCP server and a Neo4j knowledge graph to answer natural-language questions about codebase architecture, cloud migration, and technical debt.</li>
+              <li>Developed static and semantic analysis features for enterprise codebases, alongside Go APIs for architectural metrics and reporting.</li>
+              <li>Led and mentored five developers, guiding technical design reviews and feature delivery.</li>
+            </ul>
+            <p class="role-stack">Python · FastAPI · Neo4j · Go · React · TypeScript</p>
           </article>
-          <article class="project">
-            <div class="project-heading"><span class="project-number">002</span><span class="tag">GENERATIVE AI</span></div>
-            <h3>Generative AI at UCL</h3>
-            <p>Coursework for the Generative AI course in the UCL MSc Machine Learning programme, 2025–26.</p>
-            <div class="project-footer"><span>CODE &amp; COURSEWORK</span><a href="https://github.com/akshatmittal19/Generative_AI-UCL" aria-label="View Generative AI at UCL on GitHub">View on GitHub <span aria-hidden="true">↗</span></a></div>
+          <article class="role">
+            <p class="role-date">MAY 2021 — JUN 2023</p>
+            <h3>AiDash Systems</h3>
+            <p class="role-title">Software Engineer · Founding Engineering · Bangalore</p>
+            <ul>
+              <li>Joined as an early engineering hire to build a computer-vision-based vegetation management product from the ground up.</li>
+              <li>Built a geospatial application for hazard tree mapping, contributing to more than 20% lower vegetation management costs for utility clients.</li>
+              <li>Developed satellite-data ingestion and processing modules for interactive mapping and decision support.</li>
+            </ul>
+            <p class="role-stack">PostGIS · Django · Mapbox · React</p>
           </article>
-          <article class="project">
-            <div class="project-heading"><span class="project-number">003</span><span class="tag">MULTI-AGENT AI</span></div>
-            <h3>Learning about agents</h3>
-            <p>Coursework for Multi-Agent Artificial Intelligence in the UCL MSc Machine Learning programme, 2025–26.</p>
-            <div class="project-footer"><span>CODE &amp; COURSEWORK</span><a href="https://github.com/akshatmittal19/Multi-Agent-AI-UCL" aria-label="View Learning about agents on GitHub">View on GitHub <span aria-hidden="true">↗</span></a></div>
+          <article class="role">
+            <p class="role-date">JAN 2020 — FEB 2021</p>
+            <h3>Clumio</h3>
+            <p class="role-title">Member of Technical Staff · Bangalore</p>
+            <ul>
+              <li>Built a GraphQL API using AWS AppSync and Lambda for scalable data access.</li>
+              <li>Developed a customer success dashboard in Go, AWS, and React, improving visibility into customer issues and supporting faster debugging.</li>
+              <li>Modernised legacy workflows to improve load times and maintainability.</li>
+            </ul>
+            <p class="role-stack">Go · AWS · GraphQL · React</p>
           </article>
-          <p class="project-note"><a href="https://github.com/akshatmittal19?tab=repositories">Explore all repositories ↗</a></p>
         </div>
       </section>
+
+      <section class="section education" id="about" aria-labelledby="education-title">
+        <div class="section-label"><span>03 / EDUCATION &amp; BACKGROUND</span><h2 id="education-title">A foundation<br>in computer science.</h2></div>
+        <div class="section-content">
+          <article class="education-item">
+            <span class="small-label">2025 — 2026</span>
+            <h3>University College London</h3>
+            <p class="education-degree">MSc Machine Learning · Thesis completed</p>
+            <p>JN Tata Scholarship. Coursework spanning reinforcement learning, generative AI, Bayesian deep learning, multi-agent AI, and statistical learning theory.</p>
+          </article>
+          <article class="education-item">
+            <span class="small-label">2016 — 2020</span>
+            <h3>BITS Pilani</h3>
+            <p class="education-degree">BE Computer Science · Distinction · 9.18/10</p>
+            <p>Institute Merit Scholarship, awarded to the top 3% of the batch. Teaching assistant for Computer Programming, Object-Oriented Programming, and Database Management Systems.</p>
+          </article>
+          <p class="background-note">Earlier: represented India at the 2014 International Earth Science Olympiad in Spain, receiving a Special Mention.</p>
+        </div>
+      </section>
+
       <section class="contact" id="contact" aria-labelledby="contact-title">
-        <p class="eyebrow">03 / CONTACT</p>
-        <h2 id="contact-title">Good things start<br>with a <em>hello.</em></h2>
-        <p>Find my latest work and connect with me on GitHub.</p>
-        <a class="button" href="https://github.com/akshatmittal19">Find me on GitHub <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">04 / CONTACT</p>
+        <h2 id="contact-title">Let’s compare <em>notes.</em></h2>
+        <p>I’m interested in conversations and collaborations around open-ended learning, reinforcement learning, and robustness—in language models and beyond.</p>
+        <div class="action-links">
+          <a class="button" href="https://www.linkedin.com/in/akshatmittal-ml/">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/akshatmittal19">GitHub ↗</a>
+          <a class="text-link" href="https://x.com/AkshatMittall02" aria-label="Akshat Mittal on X (Twitter)">X / Twitter ↗</a>
+        </div>
       </section>
     </main>
-    <footer><span>© Akshat Mittal</span><span>A small space. An ongoing story.</span><a href="#main">Back to top ↑</a></footer>
+    <footer><span>© Akshat Mittal</span><span>London, UK</span><a href="#main">Back to top ↑</a></footer>
   </div>
 </body>
 </html>

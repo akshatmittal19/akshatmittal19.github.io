@@ -13,3 +13,9 @@ Run `python3 -m http.server 8000` in this folder and visit http://localhost:8000
 ## Hosting
 
 GitHub Pages serves the root of the `main` branch. Push changes to `main` to publish. No dependencies or build step required. `.nojekyll` enables direct static hosting.
+
+## Thesis
+
+The completed MSc thesis is served unchanged at https://akshatmittal19.github.io/assets/akshat-mittal-msc-thesis.pdf. Replace `assets/akshat-mittal-msc-thesis.pdf` to update the document while preserving its public URL.
+
+The website copy draws on the supplied CV, resume, and final thesis. The original CV and resume are excluded from Git; only the thesis is published.
