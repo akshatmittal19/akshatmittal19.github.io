@@ -55,9 +55,9 @@
             <p class="thesis-subtitle">Data Augmentation and Curriculum Design for Robust Language-Model Reasoning</p>
             <p>How can a curriculum keep finding useful challenges as a model improves—and does that learning transfer? My thesis connected ideas from open-ended learning with reinforcement-learning post-training, combining targeted data augmentation and adaptive task selection for mathematical reasoning and long-horizon terminal tasks. Supervised by Dr. Ilija Bogunovic.</p>
             <ul class="findings">
-              <li><strong>Probe the failure modes.</strong> Adding an intermediate reasoning step was the most disruptive augmentation across 50 mathematical problems and four model–inference configurations.</li>
-              <li><strong>Train on targeted variation.</strong> In procedural arithmetic, subproblem augmentation improved mean held-out accuracy from 18.48% to 28.40% under prioritised level replay, across two seeds.</li>
-              <li><strong>Test what transfers.</strong> In terminal tasks, prioritised replay found more informative training groups but transferred less well than uniform sampling: 34.0% versus 42.5% completion on InterCode-Bash, in a single training seed.</li>
+              <li><strong>An extra step exposes brittle reasoning.</strong> Adding an intermediate reasoning step was the most disruptive augmentation across 50 mathematical problems and four model–inference configurations.</li>
+              <li><strong>Targeted augmentation improves accuracy.</strong> In procedural arithmetic, subproblem augmentation improved mean held-out accuracy from 18.48% to 28.40% under prioritised level replay, across two seeds.</li>
+              <li><strong>Better training signals don’t guarantee transfer.</strong> In terminal tasks, prioritised replay found more informative training groups but transferred less well than uniform sampling: 34.0% versus 42.5% completion on InterCode-Bash, in a single training seed.</li>
             </ul>
             <p class="research-takeaway">The central lesson: useful training signals and robust generalisation do not always go together.</p>
             <div class="action-links">
